@@ -146,6 +146,8 @@ a:hover{
     transform: none;
 }
 
+
+/* sections */
 section{
     padding-top: 4vh;
     height: 96vh;
@@ -156,4 +158,20 @@ section{
 
 .section-container{
     display: flex;
+}
+
+/* profile section*/
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
 }
