@@ -43,8 +43,7 @@ a,
 
 /* NAV */
 nav {
-  background: gray;
-  border-bottom: 1px solid red;
+  background: rgba(255, 253, 253, 0.5);
   display: grid;
   place-items: center;
   height: 3.8rem;
@@ -53,6 +52,12 @@ nav {
   left: 0;
   width: 100vw;
   z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(15px);
+  -o-backdrop-filter: blur(15px);
+  -ms-backdrop-filter: blur(15px);
 }
 
 .nav__container {
@@ -67,6 +72,10 @@ nav {
   gap: 3rem;
 }
 
+.nav__menu a{
+  color: rgb(99, 99, 99);
+}
+
 .nav__buttons {
   display: flex;
   align-items: center;
@@ -76,12 +85,12 @@ nav {
 }
 
 .nav__btn {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   background: transparent;
   margin: 0; /* Remove any margins */
   padding: 0; /* Remove any padding */
-  width: 40px; /* Set a fixed width for consistency */
-  height: 40px; /* Set a fixed height for consistency */
+  width: 35px; /* Set a fixed width for consistency */
+  height: 35px; /* Set a fixed height for consistency */
   text-align: center; /* Center the icon within the button */
   display: flex;
   align-items: center;
