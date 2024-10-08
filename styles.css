@@ -380,6 +380,7 @@ article .icon {
   gap: 1rem;
   justify-content: center;
   margin: 2rem 0;
+  flex-wrap: wrap;
 }
 
 .project__categories li {
