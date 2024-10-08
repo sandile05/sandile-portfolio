@@ -295,11 +295,7 @@ section {
   margin-bottom: 2rem;
 }
 
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+
 
 .article-container {
   display: flex;
