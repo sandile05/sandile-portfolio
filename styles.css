@@ -12,6 +12,33 @@
     box-sizing: border-box;
 }
 
+:root{
+  --container-width-lg: 80%;
+  --container-width-sm: 94s%;
+
+  --radius-1: 2rem;
+  --radius-2: 1.2rem;
+  --radius-3: 0.8rem;
+  --radius-4: 0.5rem;
+  --radius-5: 0.3rem;
+
+  --transition: all 300ms ease;
+
+  --primary-hue: 358;
+  --color-primary: hsla(var(--primary-hue), 87%, 44%);
+  --color-nav-bg: hsla(var(--primary-hue), 0%, 100%, 0.4);
+  --color-gray-100: hsl(var(--primary-hue), 0%, 100%);
+  --color-gray-200: hsl(var(--primary-hue), 0%, 95%);
+  --color-gray-300: hsl(var(--primary-hue), 0%, 85%);
+  --color-gray-400: hsl(var(--primary-hue), 0%, 70%);
+  --color-gray-500: hsl(var(--primary-hue), 0%, 55%);
+  --color-gray-600: hsl(var(--primary-hue), 0%, 40%);
+  --color-gray-700: hsl(var(--primary-hue), 0%, 25%);
+  --color-gray-800: hsl(var(--primary-hue), 0%, 15%);
+  --color-gray-900: hsl(var(--primary-hue), 0%, 5%);
+}
+
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -33,6 +60,8 @@ p {
 img{
     border-radius: 50%;
 }
+
+
 
 /* TRANSITION */
 
@@ -319,7 +348,7 @@ article .icon {
 
 /* PROJECTS SECTION */
 
-#projects {
+/* #projects {
   position: relative;
 }
 
@@ -342,7 +371,58 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+} */
+
+/* projects styles  */
+
+.project__categories {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
 }
+
+.project__categories li {
+  background-color: #f0f0f0;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.project__categories li:hover,
+.project__categories .mixitup-control-active {
+  background-color: #333;
+  color: #fff;
+}
+
+.projects__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.project {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.project:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 
 /* CONTACT */
 

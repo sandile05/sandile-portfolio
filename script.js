@@ -28,6 +28,16 @@ if(window.innerWidth < 768){
     })
 };
 
+//  MixItUp for filtering projects
+var mixer = mixitup('.projects__container', {
+    selectors: {
+        target: '.project'
+    },
+    animation: {
+        duration: 300
+    }
+});
+
 // Show or hide the back-to-top button based on scroll position
 window.addEventListener('scroll', function() {
     const backToTopBtn = document.querySelector('.back-to-top');

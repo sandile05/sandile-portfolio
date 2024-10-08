@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+   />
   </head>
   <body>
 
@@ -264,7 +268,7 @@
         </div>
       </div>
     </section>
-    <section id="projects">
+    <!-- <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
@@ -328,7 +332,67 @@
         </div>
       </div>
 
-    </section>
+    </section> -->
+
+    <section class="projects" id="projects">
+       <!-- Filter buttons -->
+    <ul class="project__categories">
+      <li class="mixitup-control-active" data-filter="all">All</li>
+      <li data-filter=".html-css-js">Html, Css, Js</li>
+      <li data-filter=".bootstrap">Bootstrap</li>
+      <li data-filter=".ux-design">UX/UI Design</li>
+      <li data-filter=".wordpress">WordPress</li>
+  </ul>
+
+  <!-- Project container -->
+  <div class="projects__container">
+      <div class="project mix html-css-js">
+          <img src="project1.jpg" alt="Project 1">
+          <p>Web Development Project 1</p>
+          <p>html css js</p>
+      </div>
+      <div class="project mix ux-design">
+          <img src="project2.jpg" alt="Project 2">
+          <p>Design Project 2</p>
+          <p>ux design</p>
+      </div>
+      <div class="project mix wordpress">
+          <img src="project3.jpg" alt="Project 3">
+          <p>WordPress Project 3</p>
+      </div>
+      <div class="project mix html-css-js">
+          <img src="project4.jpg" alt="Project 4">
+          <p>Web Development Project 4</p>
+          <p>html css js</p>
+      </div>
+      <div class="project mix ux-design">
+          <img src="project5.jpg" alt="Project 5">
+          <p>Design Project 5</p>
+          <p>ux design</p>
+      </div>
+      <div class="project mix wordpress">
+        <img src="project6.jpg" alt="Project 6">
+        <p>wordpress Project 6</p>
+
+    </div>
+    <div class="project mix bootstrap">
+      <img src="project7.jpg" alt="Project 7">
+      <p>bootstrap Project 7</p>
+  </div>
+  <div class="project mix html-css-js">
+    <img src="project8.jpg" alt="Project 8">
+    <p>html-css-js Project 8</p>
+</div>
+<div class="project mix wordpress">
+  <img src="project9.jpg" alt="Project 9">
+  <p>wordpress Project 9</p>
+</div>
+  </div>
+
+  </section>
+
+  <!-- end of projects  -->
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -356,7 +420,7 @@
       <i class="fas fa-arrow-up"></i>
     </a>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
