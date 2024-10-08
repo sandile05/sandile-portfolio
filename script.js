@@ -28,6 +28,26 @@ if(window.innerWidth < 768){
     })
 };
 
+// Show or hide the back-to-top button based on scroll position
+window.addEventListener('scroll', function() {
+    const backToTopBtn = document.querySelector('.back-to-top');
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = 'block';
+    } else {
+      backToTopBtn.style.display = 'none';
+    }
+  });
+
+  // Smooth scroll back to top when button is clicked
+  document.querySelector('.back-to-top').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+
 // Function to handle screen resizing
 const handleResize = () => {
   if (window.innerWidth > 768) {
