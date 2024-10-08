@@ -20,6 +20,14 @@ const closeNavHandler = () => {
 navOpenBtn.addEventListener('click', openNavHandler);
 navCloseBtn.addEventListener('click', closeNavHandler);
 
+// close nav menu on click
+const navItems = navMenu.querySelectorAll('a');
+if(window.innerWidth < 768){
+    navItems.forEach(item => {
+        item.addEventListener('click', closeNavHandler);
+    })
+};
+
 // Function to handle screen resizing
 const handleResize = () => {
   if (window.innerWidth > 768) {
@@ -40,3 +48,5 @@ window.addEventListener('resize', handleResize);
 
 // Initial check to set the correct state on load
 handleResize();
+
+
