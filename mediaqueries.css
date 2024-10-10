@@ -1,7 +1,9 @@
-@media screen and (max-width: 1400px) {
-    #profile {
-      /* height: 83vh; */
-      /* margin-bottom: 6r; */
+@media screen and (min-width: 1201px) {
+    section{
+      padding: 100px 0;
+    }
+    #profile{
+      padding-top: 150px;
     }
     .about-containers {
       flex-wrap: wrap;
@@ -29,12 +31,16 @@
     .section-container {
       display: block;
     }
+
+    section{
+      padding-bottom: 80px;
+    }
     .arrow {
       display: none;
     }
     section,
     .section-container {
-      height: fit-content;
+      min-height: fit-content;
     }
 
     .section__pic-container {
@@ -48,9 +54,6 @@
   }
 
   @media (max-width: 768px) {
-    /* .container {
-      width: 100%;
-    } */
 
     .nav__menu {
       position: fixed;
@@ -64,7 +67,7 @@
 
     .nav__toggle-open,
     .nav__toggle-close {
-      display: inline-flex; /* Use inline-flex for consistent sizing and alignment */
+      display: inline-flex; /* inline-flex for consistent sizing and alignment */
       font-size: 1.8rem;
       color: black;
       width: 40px; /* Ensure toggle buttons also have a fixed width */
@@ -91,7 +94,6 @@
         border-bottom: 1px solid rgb(99, 99, 99);
         text-align: center;
         box-shadow: -1.5rem 5rem 5rem rgba(0, 0, 0, 0.3);
-        /* text-decoration: none; */
         color: rgb(99, 99, 99);
     }
 
@@ -121,17 +123,14 @@
             opacity: 1;
         }
     }
+
+    #profile{
+      min-height: fit-content;
+    }
   }
 
   @media screen and (max-width: 600px) {
-    /* #contact,
-    footer {
-      height: 40vh;
-    } */
-    #profile {
-      /* height: 90vh; */
-      /* margin-bottom: 0; */
-    }
+
     article {
       font-size: 1rem;
     }
@@ -168,12 +167,26 @@
       justify-content: center;
     }
     .section__text__p2 {
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
     .title {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
+
+
     .text-container {
       text-align: justify;
     }
+
+    .footer__menu{
+      display: none;
+    }
+
+    footer{
+      padding-top: 1rem;
+    }
   }
+
+
+
+
