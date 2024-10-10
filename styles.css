@@ -40,20 +40,49 @@
 }
 
 
-body {
+html, body {
   font-family: "Poppins", sans-serif;
   width: 100%;
-}
-
-html {
-  scroll-behavior: smooth;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
+body{
+  font-family: "Poppins", sans-serif;
+  padding-top: 0;
+}
+
+main{
+  flex: 1;
+  /* padding: 1rem; */
+  text-align: center;
+}
+
+/* SECTIONS */
+
+section {
+  padding:  1rem;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+section:nth-child(even){
+  background: var(--color-gray-200);
+}
+
+/*
 .container {
   width: 100%;
   margin-inline: auto;
-}
+} */
+
+
 
 
 p {
@@ -147,24 +176,6 @@ nav {
 }
 
 
-/* SECTIONS */
-
-section {
-  padding: 10vh 5vw;
-  height: 96vh;
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  /* min-height: fit-content; */
-}
-
-.section-container {
-  display: flex;
-}
-
-section:nth-child(odd){
-  background: var(--color-gray-200);
-}
 
 /* PROFILE SECTION */
 
@@ -174,7 +185,9 @@ section:nth-child(odd){
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 75vh;
+  padding-top: 150px;
+  min-height: fit-content;
+  /* margin-top: -20px; */
 }
 
 .section__pic-container {
