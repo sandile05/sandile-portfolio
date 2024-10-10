@@ -185,7 +185,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  padding-top: 150px;
+  padding-top: 90px;
   min-height: fit-content;
   /* margin-top: -20px; */
 }
@@ -320,14 +320,9 @@ nav {
 }
 
 .about-pic {
-  border-radius: 2rem;
+  border-radius: 50%;
 }
 
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
 
 .details-container {
   padding: 1.5rem;
