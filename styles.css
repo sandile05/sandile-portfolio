@@ -384,7 +384,7 @@ article .icon {
 }
 
 .project__categories li {
-  background-color: #f0f0f0;
+  background-color: #d3d3d3;
   padding: 0.4rem 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -393,7 +393,7 @@ article .icon {
 
 .project__categories li:hover,
 .project__categories .mixitup-control-active {
-  background-color: #646161;
+  background-color:rgb(85, 85, 85);
   color: #fff;
 }
 
