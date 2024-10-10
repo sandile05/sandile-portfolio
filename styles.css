@@ -14,13 +14,14 @@
 
 :root{
   --container-width-lg: 80%;
-  --container-width-sm: 94s%;
+  --container-width-sm: 94%;
 
   --radius-1: 2rem;
   --radius-2: 1.2rem;
   --radius-3: 0.8rem;
   --radius-4: 0.5rem;
   --radius-5: 0.3rem;
+  --radius-6: 50%;
 
   --transition: all 300ms ease;
 
@@ -163,7 +164,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 75vh;
 }
 
 .section__pic-container {
@@ -199,8 +200,8 @@ section {
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1.7rem;
-  gap: 1rem;
+  margin-top: 2rem;
+  gap: 2rem;
 }
 
 #socials-container a{
@@ -208,14 +209,16 @@ section {
     color: var(--color-gray-900);
     padding: 0.5rem;
     display: inline-block;
-    border-radius: var(--radius-4);
+    border-radius: var(--radius-6);
     transition: var(--transition);
+    font-size: 1.2rem;
 }
 
 #socials-container a:hover{
-    background: black;
-    color: var(--color-gray-100);
-    transform: translate(-0.5rem, 0.5rem);
+    background: #868282;
+    color: #fff;
+    opacity: 0.7;
+    transform: translateY(-0.5rem);
 }
 
 /* ICONS */
@@ -243,7 +246,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: rgb(145, 145, 145) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -253,12 +256,12 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: rgb(145, 145, 145);
   color: white;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background:rgb(99, 99, 99)
 }
 
 .btn-color-2 {
