@@ -19,7 +19,7 @@
   --radius-1: 50%;
   --radius-2: 1rem;
 
-  --transition: all 300ms ease;
+  --transition: all 300ms ease-in-out;
 
   --nav-light-bg: rgba(255, 253, 253, 0.5);
   --box-shadow-1: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -233,6 +233,8 @@ nav {
   text-align: center;
   align-items: center;
   justify-content: center;
+  color: var(--color-gray-4) !important;
+  transition: var(--transition);
 }
 
 
