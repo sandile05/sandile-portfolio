@@ -28,6 +28,18 @@ if(window.innerWidth < 768){
     })
 };
 
+// Close the nav menu when clicking outside of it
+document.addEventListener('click', (event) => {
+  const isClickInsideNavMenu = navMenu.contains(event.target);
+  const isClickInsideNavButton = navOpenBtn.contains(event.target) || navCloseBtn.contains(event.target);
+
+  // Closes the nav menu if the click is outside of the nav menu and buttons
+  if (!isClickInsideNavMenu && !isClickInsideNavButton) {
+    closeNavHandler();
+  }
+});
+
+
 //  MixItUp for filtering projects
 var mixer = mixitup('.projects__container', {
     selectors: {
