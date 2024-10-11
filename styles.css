@@ -60,6 +60,7 @@ section {
   margin: 0 auto;
   box-sizing: border-box;
   min-height: fit-content;
+  scroll-margin-top: 3.8rem;
 }
 
 .section-container {
@@ -196,7 +197,11 @@ nav {
 }
 
 .nav__menu a{
-  color: var(--color-gray-3);
+  color: var(--color-gray-2);
+}
+
+.nav__menu a:hover{
+  color: black;
 }
 
 .nav__buttons {
