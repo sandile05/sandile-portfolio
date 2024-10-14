@@ -98,6 +98,12 @@ section {
 
 .section-container {
   display: flex;
+  padding-left: 45px;
+  padding-right: 45px;
+  gap: 4rem;
+  height: 80%;
+  /* justify-content: space-around; */
+
 }
 
 section:nth-child(even){
@@ -376,11 +382,6 @@ nav {
   text-align: center;
 }
 
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
-
 .section__pic-container {
   height: 400px;
   width: 400px;
@@ -391,6 +392,8 @@ nav {
 
 #experience{
   margin-top: -32px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 .experience-sub-title {
   color: var(--color-gray-3);
