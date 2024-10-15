@@ -46,8 +46,13 @@ var mixer = mixitup('.projects__container', {
         target: '.project'
     },
     animation: {
-        duration: 300
-    }
+        duration: 0
+    },
+    callbacks: {
+      onMixEnd: function() {
+          AOS.refresh();
+      }
+  }
 });
 
 // Show or hide the back-to-top button based on scroll position

@@ -35,7 +35,7 @@ mixitup.ConfigAnimation = function() {
      * @default     true
      */
 
-    this.enable = true;
+    this.enable = false;
 
     /**
      * A string of one or more space-seperated properties to which transitions will be
