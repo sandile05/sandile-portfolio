@@ -423,13 +423,25 @@ article .icon {
 }
 
 /* PROJECTS SECTION */
+.projects__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-content: center;
+  max-width: 100%;
+}
+
+
 
 .project__categories {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  margin: 2rem 0;
+  align-items: center;
+  margin: 2rem auto;
   flex-wrap: wrap;
+
 }
 
 .project__categories li {
@@ -447,12 +459,7 @@ article .icon {
   color: var(--color-gray-light);
 }
 
-.projects__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-}
+
 
 
 
