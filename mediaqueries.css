@@ -67,7 +67,7 @@
 
     .nav__toggle-open,
     .nav__toggle-close {
-      display: inline-flex; /* inline-flex for consistent sizing and alignment */
+      display: inline-flex;
       font-size: 1.8rem;
       color: black;
       width: 40px; /* Ensure toggle buttons also have a fixed width */

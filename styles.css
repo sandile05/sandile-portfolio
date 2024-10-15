@@ -471,7 +471,7 @@ article .icon {
   margin-bottom: 1.5rem;
   text-align: center;
   background: var(--color-gray-light-1);
-  /* transition:  var(--transition); */
+  transition:  var(--transition)
 }
 
 .project:hover {
