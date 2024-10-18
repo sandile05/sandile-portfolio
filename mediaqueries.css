@@ -1,6 +1,6 @@
 @media screen and (min-width: 1201px) {
     section{
-      padding: 100px 0;
+      /* padding: 90px 1rem; */
     }
     #profile{
       padding-top: 150px;
@@ -22,7 +22,7 @@
     #hamburger-nav {
       display: flex;
     }
-    #experience,
+
     .experience-details-container {
       margin-top: 2rem;
     }
@@ -65,7 +65,14 @@
     }
   }
 
+
+
   @media (max-width: 768px) {
+
+    section{
+      padding-top: 60px;
+      padding-bottom: 50px;
+    }
 
     .nav__menu {
       position: fixed;
@@ -137,7 +144,7 @@
     }
 
     #profile{
-      min-height: fit-content;
+      /* min-height: fit-content; */
     }
 
   }
