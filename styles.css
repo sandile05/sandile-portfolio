@@ -364,11 +364,15 @@ nav {
   width: 30px;
   height: 30px;
   margin: 0 auto;
-  padding-top: 110px;
+  padding-top: 50px;
 }
 
 .arrow-down img{
   width: 100%;
+}
+
+.arrow-down:hover{
+  transform: translateY(-0.5rem);
 }
 
 
