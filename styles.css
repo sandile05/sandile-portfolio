@@ -217,18 +217,18 @@ nav {
   background: var(--nav-bg);
   display: grid;
   place-items: center;
-  height: 3.8rem;
+  height: 3.3rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
   box-shadow: var(--box-shadow-1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  -moz-backdrop-filter: blur(15px);
-  -o-backdrop-filter: blur(15px);
-  -ms-backdrop-filter: blur(15px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  -moz-backdrop-filter: blur(8px);
+  -o-backdrop-filter: blur(8px);
+  -ms-backdrop-filter: blur(8px);
 }
 
 .nav__container {
