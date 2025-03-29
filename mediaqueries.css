@@ -1,18 +1,16 @@
 @media screen and (min-width: 1201px) {
-    section{
-      /* padding: 90px 1rem; */
-    }
+   
     #profile{
       padding-top: 150px;
     }
     .about-containers {
       flex-wrap: wrap;
     }
-    #contact,
-    #projects {
+    #contact {
       height: fit-content;
     }
   }
+
 
 
 @media screen and (max-width: 1200px) {
@@ -143,9 +141,7 @@
         }
     }
 
-    #profile{
-      /* min-height: fit-content; */
-    }
+    
 
   }
 
@@ -206,6 +202,27 @@
       padding-top: 1rem;
     }
   }
+
+  /* 2 columns from 480px to 780px */
+@media (min-width: 626px) {
+  .projects__container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 3 columns from 780px and above */
+@media (min-width: 910px) {
+  .projects__container {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 4 columns for wider screens (optional) */
+/* @media (min-width: 1024px) {
+  .projects__container {
+      grid-template-columns: repeat(4, 1fr);
+  }
+} */
 
 
 
