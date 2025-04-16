@@ -527,6 +527,9 @@ article .icon {
   flex-direction: column;
   justify-content: space-between;
 }
+.project .language{
+  color: var(--color-accent-light)
+}
 
 .project:hover {
   box-shadow: var(--box-shadow-mid);
