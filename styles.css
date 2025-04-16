@@ -524,8 +524,8 @@ article .icon {
 }
 
 .project:hover {
-  transform: translateY(-5px);
 }
+
 
 .project img {
   width: 100%;
@@ -533,6 +533,13 @@ article .icon {
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 1rem;
+  filter: brightness(60%);
+  transition: filter 0.3s ease;
+}
+.project:hover img {
+  filter: brightness(100%);
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
 }
 
 .project h3 {
