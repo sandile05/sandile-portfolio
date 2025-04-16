@@ -174,13 +174,10 @@ img{
   transition: var(--transition-default);
 }
 
-.btn-color-1:hover {
-  background: var(--color-gray-3)
-}
 
 .btn-color-1{
-  background: var(--color-gray-3);
-  color: var(--color);
+  background: none;
+  color: var(--text-p);
 }
 
 .btn-color-1:hover{
@@ -230,11 +227,18 @@ nav {
   -ms-backdrop-filter: blur(8px);
 }
 
+nav img{
+  border-radius: 0%;
+}
 .nav__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 85%;
+}
+
+.nav__container .nav__logo{
+  padding-top: 3px;
 }
 
 .nav__menu {
@@ -287,7 +291,7 @@ nav {
   text-align: center;
   align-items: center;
   justify-content: center;
-  color: var(--color-gray-3) !important;
+  color: var(--text-p) !important;
   transition: var(--transition);
 }
 
@@ -348,7 +352,7 @@ nav {
 }
 
 #socials-container a{
-    color: var(--color-gray-4);
+    color: var(--color-accent);
     display: inline-block;
     border-radius: var(--radius-1);
     transition: var(--transition-default);
@@ -428,7 +432,7 @@ nav {
   padding-right: 45px;
 }
 .experience-sub-title {
-  color: var(--color-gray-3);
+  color: var(--text-p);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -658,9 +662,9 @@ footer{
 }
 
 .footer__copyright{
-  color: var(--color-gray-light-1);
+  color: var(--color-accent);
   text-align: center;
-  border-top: 1px solid var(--color-gray-light);
+  border-top: 1px solid var(--color-bg-main) !important;
   padding: 1.5rem 0;
 }
 
