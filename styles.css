@@ -512,62 +512,68 @@ article .icon {
 }
 
 .project {
-  background: var(--color-bg-main);
-  padding: 1.5rem;
-  border-radius: 10px;
-  border: 1px solid var(--color-accent);
-  box-shadow: var(--box-shadow-soft);
-  text-align: center;
-  transition: transform 0.3s ease;
-  max-width: 350px;
-  width: 100%;
-  margin: auto;
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.project .language{
-  color: var(--color-accent-light)
-}
-
-.project:hover {
-  box-shadow: var(--box-shadow-mid);
+  align-items: flex-end;
+  padding: 1rem;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
+.project::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 30, 30, 0.4); /* dark overlay */
+  transition: background 0.3s ease;
+}
 
-.project img {
+.project:hover::before {
+  background: rgba(0, 0, 0, 0.752);
+}
+
+.project-content {
+  position: relative;
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  filter: brightness(60%);
-  transition: filter 0.3s ease;
-}
-.project:hover img {
-  filter: brightness(100%);
-  transform: scale(1.03);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 
-.project h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
+.project .language,
+.project .project-buttons {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-.project p {
-  font-size: 1rem;
-  color: var(--text-p);
-  margin-bottom: 1rem;
+.project:hover .language,
+.project:hover .project-buttons {
+  opacity: 1;
+  max-height: 200px;
 }
 
-/* Buttons */
+.project h3,
+.project > p {
+  margin: 0 0 0.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
 .project-buttons {
   display: flex;
-  justify-content: center;
-  gap: 0.75rem;
-  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
 }
+
+
+
+
 
 
 
