@@ -23,7 +23,9 @@
   --color-bg-main: #1b0f11;         /* dark maroon background */
   --color-bg-nav: #2a1517d2;          /* slightly lighter for nav */
   --color-accent: #a42e3b;          /* maroon/dark red accent */
-  --color-accent-light: #c94c57;    /* lighter version for hover/buttons */
+  --color-accent-light: #c94c57;  
+  --color-accent-light-2: #ff0000;
+  /* lighter version for hover/buttons */
 
   /* Text Colors */
   --text-nav: #f8f8f8;
@@ -521,7 +523,7 @@ article .icon {
   display: flex;
   align-items: flex-end;
   padding: 1rem;
-  color: white;
+  border: solid 1px var(--color-accent-light);
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
@@ -530,7 +532,7 @@ article .icon {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(30, 30, 30, 0.4); /* dark overlay */
+  background: rgba(71, 0, 0, 0.381); /* dark overlay */
   transition: background 0.3s ease;
 }
 
@@ -544,7 +546,7 @@ article .icon {
   transition: all 0.3s ease;
 }
 
-.project .language,
+.project .description,
 .project .project-buttons {
   opacity: 0;
   max-height: 0;
@@ -552,7 +554,7 @@ article .icon {
   transition: all 0.3s ease;
 }
 
-.project:hover .language,
+.project:hover .description,
 .project:hover .project-buttons {
   opacity: 1;
   max-height: 200px;
@@ -562,7 +564,15 @@ article .icon {
 .project > p {
   margin: 0 0 0.5rem;
   font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.904);
+}
+
+.project h3{
+  color: var(--color-accent-light-2);
+}
+
+.project .project-title{
+  color: #fff;
 }
 
 .project-buttons {
