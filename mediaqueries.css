@@ -11,8 +11,12 @@
     #contact {
       height: fit-content;
     }
+    .section__pic-container img {
+      width: 275px;
+      height: 275px;
+      margin: 0 auto 2rem;
+    }
   }
-
 
 
 @media screen and (max-width: 1200px) {
