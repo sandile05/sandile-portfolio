@@ -40,10 +40,10 @@
     }
     section,
     .section-container {
-      min-height: fit-content;
+      height: fit-content;
     }
 
-    .section__pic-container {
+    .section__pic-container img {
       width: 275px;
       height: 275px;
       margin: 0 auto 2rem;
@@ -206,25 +206,18 @@
   }
 
   /* 2 columns from 480px to 780px */
-@media (min-width: 626px) {
+@media (min-width: 580px) {
   .projects__container {
       grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* 3 columns from 780px and above */
+/* 3 columns from 910px and above */
 @media (min-width: 910px) {
   .projects__container {
       grid-template-columns: repeat(3, 1fr);
   }
 }
-
-/* 4 columns for wider screens (optional) */
-/* @media (min-width: 1024px) {
-  .projects__container {
-      grid-template-columns: repeat(4, 1fr);
-  }
-} */
 
 
 

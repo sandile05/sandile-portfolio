@@ -299,31 +299,37 @@ nav img{
 
 
 /* PROFILE SECTION */
-
 #profile {
+  max-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6rem;
-  padding-top: 110px;
-  height: 100vh;
+  padding-top: 5rem;
+  box-sizing: border-box;
 }
 
-#profile .title{
-  padding-bottom: 20px;
-  padding-top: 10px;
-  color: var(--color-accent-light);
+.profile-inner {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
+  
+  align-items: center;
   margin: auto 0;
 }
 
+
 .section__text {
-  align-self: center;
   text-align: center;
 }
 
@@ -337,14 +343,19 @@ nav img{
 
 .section__text__p2 {
   font-size: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
+#profile .title {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: var(--color-accent-light);
+}
 
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   gap: 2rem;
 }
 
