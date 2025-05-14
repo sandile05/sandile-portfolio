@@ -607,7 +607,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: auto;
   padding-top: 20px;
 }
 
@@ -643,6 +643,51 @@ article .icon {
 
 .contact-icon {
   cursor: default;
+}
+
+.contact-form-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-accent);
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: var(--text-p);
+  resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--text-p);
+  opacity: 0.6;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.contact-form button {
+  padding: 0.75rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0.5rem;
 }
 
 
