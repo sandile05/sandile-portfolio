@@ -2,9 +2,9 @@
 
 @media screen and (min-width: 1201px) {
    
-    #profile{
+    /* #profile{
       padding-top: 150px;
-    }
+    } */
     .about-containers {
       flex-wrap: wrap;
     }
@@ -183,11 +183,7 @@
       gap: 0.5rem;
       text-align: center;
     }
-    .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-    }
+   
     .section__text__p2 {
       font-size: 1rem;
     }
