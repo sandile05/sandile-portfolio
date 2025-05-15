@@ -45,12 +45,12 @@
    
     section,
     .section-container {
-      /* height: fit-content; */
+      height: fit-content;
     }
 
     .section__pic-container img {
-      width: 275px;
-      height: 275px;
+      width: 235px;
+      height: 235px;
       margin: 0 auto 2rem;
     }
     .about-containers {
