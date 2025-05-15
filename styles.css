@@ -300,99 +300,89 @@ nav img{
 
 
 /* PROFILE SECTION */
-#profile {
-  max-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 3.5rem;
+/* Base Reset */
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* SECTION BASE */
+#profile {
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+/* INNER CONTAINER */
 .profile-inner {
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  width: 100%;
-}
-
-.section__pic-container {
-  display: flex;
-  height: 300px;
-  width: 300px;
-  
-  align-items: center;
-  margin: auto 0;
-}
-
-
-.section__text {
-  text-align: center;
-}
-
-.section__text p {
-  font-weight: 600;
-}
-
-.section__text__p1 {
-  text-align: center;
-}
-
-.section__text__p2 {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-#profile .title {
-  padding-bottom: 10px;
-  padding-top: 10px;
-  color: var(--color-accent-light);
-}
-
-#socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
   gap: 2rem;
 }
 
-#profile #socials-container{
-  margin-top: 50px;
+/* IMAGE STYLING */
+.section__pic-container img {
+  width: 180px;
+  height: auto;
+  border-radius: 12px;
 }
 
-#socials-container a{
-    color: var(--color-accent);
-    display: inline-block;
-    border-radius: var(--radius-1);
-    transition: var(--transition-default);
-    font-size: 1.2rem;
+/* TEXT CONTENT */
+.section__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
 }
 
-#socials-container a:hover{
-
-    opacity: 0.6;
-    transform: translateY(-0.5rem);
+.section__text__p1 {
+  font-size: 1rem;
+  color: #555;
 }
 
-/* .arrow-down{
-  width: 30px;
-  height: 30px;
-  margin: 0 auto;
-  padding-top: 20px;
+.title {
+ 
+
+.section__text__p2 {
+  font-size: 0.95rem;
+  color: #444;
+  max-width: 340px;
+  line-height: 1.5;
 }
 
-.arrow-down img{
-  width: 100%;
+/* BUTTON */
+.btn-container {
+  margin-top: 1rem;
 }
 
-.arrow-down:hover{
-  transform: translateY(-0.5rem);
-} */
+.btn {
+  
+}
 
+.btn:hover {
+  background-color: #333;
+}
+
+/* SOCIAL ICONS */
+#socials-container {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+#socials-container li a {
+  font-size: 1.5rem;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+#socials-container li a:hover {
+  color: #555;
+}
 
 /* ABOUT SECTION */
 
