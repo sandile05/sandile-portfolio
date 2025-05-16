@@ -2,23 +2,14 @@
 
 @media screen and (min-width: 1201px) {
    
-    /* #profile{
-      padding-top: 150px;
-    } */
+ 
     .about-containers {
       flex-wrap: wrap;
     }
     #contact {
       height: fit-content;
     }
-    /* .section__pic-container img {
-      margin: 0 auto;
-    } */
 
-    #profile,
-    .section-container {
-      display: block;
-    }
   }
 
 
@@ -42,17 +33,15 @@
     section{
       padding-bottom: 80px;
     }
-   
+    .arrow {
+      display: none;
+    }
     section,
     .section-container {
       height: fit-content;
     }
 
-    .section__pic-container img {
-      width: 235px;
-      height: 235px;
-      margin: 0 auto 2rem;
-    }
+  
     .about-containers {
       margin-top: 0;
     }
