@@ -311,7 +311,7 @@ nav img{
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.2;
@@ -326,7 +326,7 @@ nav img{
 .hero-subtitle {
   font-size: 1.25rem;
   color: var(--text-p);
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .hero-btns {
@@ -354,13 +354,12 @@ nav img{
 }
 
 .hero-image {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .hero-image img {
   max-width: 250px;
   width: 100%;
-  border-radius: 50%;
   object-fit: cover;
 }
 

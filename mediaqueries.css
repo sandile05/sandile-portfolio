@@ -63,10 +63,7 @@
 
   @media (max-width: 768px) {
 
-    section{
-      padding-top: 60px;
-      padding-bottom: 50px;
-    }
+    
 
     .nav__menu {
       position: fixed;
